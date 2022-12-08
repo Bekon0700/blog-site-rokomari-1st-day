@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.nav-bar {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+
+        .logo-span {
+            color: rgb(211, 143, 15);
+        }
+    }
+
+    .routes {
+        font-size: 1.2em;
+        display: flex;
+        font-weight: 600;
+        gap: 1rem;
+
+        .link {
+            text-decoration: none;
+
+        }
+
+        .link:hover {
+            color: gray;
+        }
+
+    }
+}
+
+.blog-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem 0;
+
+
+    .blog-section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .blog-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+
+        .blog-card {
+            background-color: #F6F6F6;
+            border-radius: 0 0 0.5rem 0.5rem ;
+
+
+            img {
+                width: 100%;
+                height: 20rem;
+                border-radius: .5rem .5rem 0 0;
+            }
+
+            .card-container {
+                padding: 1rem 2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                .tags-container {
+                    padding-bottom: 0.5rem;
+                    display: flex;
+                    gap: 0.5rem;
+                    font-weight: bold;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                }
+
+                .card-title-top {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.2rem;
+                    font-size: 2.2rem;
+                    font-weight: 600;
+
+
+                    .card-title {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+
+
+                .card-author {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: rgb(191, 125, 1);
+                }
+
+                .card-description {
+                    font-size: 16px;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .read-more-btn{
+                    padding-bottom: 0.5rem;
+                    display: flex;
+                    gap: 0.2rem;
+                    text-transform: uppercase;
+                    align-items: center;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    font-weight: 900;
+                    justify-content: end;
+                }
+            }
+        }
+    }
+
+}
+
+.single-blog-container {
+    padding: 2rem 0;
+    width: 70%;
+    margin: 0 auto;
+}
