@@ -1,0 +1,16 @@
+@mixin create-btn($bg-color, $font-color, $hover-bg, $hover-font-color) {
+  font-size: 18px;
+  font-weight: 600;
+  color: $font-color;
+  background-color: $bg-color;
+  border-radius: 4px;
+  padding: 12px 0;
+  border: 0px;
+  cursor: pointer;
+
+  &:hover {
+    color: $hover-font-color;
+    background-color: $hover-bg;
+    transition: ease-in-out 0.5s;
+  }
+}

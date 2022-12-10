@@ -1,0 +1,31 @@
+$widths: 40, 50, 60, 70, 75, 80, 85, 90, 95;
+
+@each $width in $widths {
+    .w-#{$width} {
+        width: #{$width}vw;
+        margin: 0 auto;
+    }
+}
+
+@mixin display-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin display-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin display-gap {
+    gap: 0.6rem;
+}
+
+.display-f {
+    @include display-flex-row();
+    @include display-gap();
+}
+
+.py {
+    padding: 1.5rem 0;
+}
